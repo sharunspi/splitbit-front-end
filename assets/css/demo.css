@@ -25,6 +25,7 @@
 	position: relative;
 	text-align: left;
 }
+
 .icon-container [class^="ti-"],
 .icon-container [class*=" ti-"] {
 	color: #000;
@@ -37,6 +38,7 @@
 	font-size: 2.2em;
 	margin-top: -5px;
 }
+
 .icon-container:hover .icon-name {
 	color: #000;
 }
@@ -67,4 +69,11 @@
 .table-upgrade td:nth-child(2),
 .table-upgrade td:nth-child(3){
     text-align: center;
+}
+.sb-side{
+	padding-right: 200px;
+	padding-top: 20px;
+}
+.sb-s{
+	padding-right: -100px;
 }
