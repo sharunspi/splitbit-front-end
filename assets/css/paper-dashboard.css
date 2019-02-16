@@ -17,6 +17,10 @@
 .ct-blue {
     stroke: #7A9E9F !important;
 }
+body{
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
 
 .ct-azure {
     stroke: #68B3C8 !important;
