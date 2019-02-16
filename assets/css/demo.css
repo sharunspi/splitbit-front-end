@@ -149,6 +149,17 @@ input[type=file]{
 	border: none;
 	border-bottom: 4px solid #2eb29a;
 }
+.sidebar[data-active-color="danger"] .nav li.active > a, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a{
+	color: #2eb29a;
+}
 pre{
 	border: none;
+}
+.sidebar .nav, .off-canvas-sidebar .nav{
+	overflow-x:hidden; 
+}
+.main-panel .navbar-brand.underline{
+	border-bottom: 2px solid #2eb29a;
+	padding-left: 0px;
+	margin-left: 20px;
 }
