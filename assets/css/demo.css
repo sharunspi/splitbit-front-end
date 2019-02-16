@@ -84,3 +84,58 @@
 	width: 60%;
 	height: 60%;
 }
+.w-100{
+	width: 100% !important;
+}
+.custom-btn{
+	display: table;
+	margin: 50px auto;
+}
+.v-h-100{
+	height: 100vh;
+}
+.i-b{
+	margin: 0px 10px;
+	display: inline-block !important;
+}
+.btn-sec{
+	display: table;
+	margin: 40px auto;
+}
+.main-banner{
+	margin-top: 80px;
+}
+#drag-section{
+	padding: 180px;
+}
+input[type=file]{
+	visibility: hidden;		
+}
+.dz-error-mark,.dz-success-mark,.dz-error-message{
+	display: none !important;
+}
+.dropzone{
+	background: none !important;
+	border-style: dashed !important;
+	border-radius: 5px;
+	border-color: #2eb29a !important;
+}
+.dropzone .dz-preview.dz-file-preview .dz-image{
+	background: #ffffffad !important;
+}
+.dropzone .dz-preview {
+    position: relative !important;
+    display: table !important;
+    /* width: 400px; */
+    margin: 0.5em auto !important;
+}
+.loading-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
