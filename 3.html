@@ -146,12 +146,19 @@
                       
                             <div class="intro-info embed ">
                                  
-                                    <div>
-                                     <a href="#about">   <button class="btn-get-started scrollto " >Get Started</button></a>
-                                     <a href="#services"> <button class="btn-get-started scrollto " >Our Services</button></a>  
-                                     <button  type="submit" title="Send Message">Send Message</button>
-                                    </div>
+                                    <div >
+                                        <div class="col-md-12 a ">    
+                                            Button 1           <a href="#about">   <button class="btn-get-started scrollto b1" 
+                                          >Get Started</button></a></div>
+                                 
                                     
+                                    </div>
+                                    <div class="col-md-12 a">   
+                                        Button 2  <a href="#services"> <button class="btn-get-started scrollto b1 " >Our Services</button></a> </div>
+                                    <div class="col-md-12 a">
+                                        Button 3
+                                            <button class="b2"  type="submit" title="Send Message">Send Message</button>
+                                    </div>
                                     </div>
                                   </div>
                             
@@ -170,12 +177,36 @@
                                             </div>
                                             <div id="menu1" class="tab-pane fade">
                                              <pre><code class="css">
-                                                .text-center
-                                                {text-align:center}
-                                                .text-justify
-                                                {text-align:justify}
-                                                .text-nowrap
-                                                {white-space:nowrap}
+                                                    .embed #intro .intro-info .btn-get-started {
+                                                        background: #007bff;
+                                                        border: 2px solid #007bff;
+                                                        color: #fff;
+                                                    }
+                                                    .b1{
+                                                        font-family: "Montserrat", sans-serif;
+                                                    font-size: 14px;
+                                                    font-weight: 600;
+                                                    letter-spacing: 1px;
+                                                    display: inline-block;
+                                                    padding: 10px 32px;
+                                                    border-radius: 50px;
+                                                    transition: 0.5s;
+                                                    margin: 0 20px 20px 0;
+                                                    background: #007bff;
+                                                    color: white;
+                                                    }
+                                                    .b2{
+                                                        background: #007bff;
+                                                    border: 0;
+                                                    border-radius: 20px;
+                                                    padding: 8px 30px;
+                                                    color: #fff;
+                                                    transition: 0.3s;
+                                                    }
+                                                    .a{
+                                                        padding-top: 24px;
+                                                        padding-bottom: 24px;
+                                                    }
                                                 </code>
                                              </pre>
                                             </div>

@@ -5,18 +5,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-	<title>Splitbit - admin page </title>
+
+	<title>Paper Dashboard by Creative Tim</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-  
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,80 +22,23 @@
     <!--  Paper Dashboard core CSS    -->
     <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
 
-
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
-
     <!--  Fonts and icons     -->
-    <link rel="stylesheet"
-      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/basic.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-background-color="white" data-active-color="danger">
 
-    <!--
-		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-	-->
-
-    	<div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="index.html" class="simple-text">
-                    <img src="assets/img/logo.png" alt="" class="logo-img"> 
-                </a>
-            </div>
-
-            <ul class="nav">
-                <li class="active">
-                    <a href="index.html">
-                        <i class="ti-layout-tab-window"></i>
-                        <p>Header</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="1.html">
-                        <i class="ti-layout-media-overlay"></i>
-                        <p>Footer</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="2.html">
-                        <i class="ti-view-list-alt"></i>
-                        <p>Table List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="3.html">
-                        <i class="ti-game"></i>
-                        <p>Buttons</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="4.html">
-                        <i class="ti-layout-grid3-alt"></i>
-                        <p>Icons</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="5.html">
-                        <i class="ti-map"></i>
-                        <p>forms</p>
-                    </a>
-                </li>
-            </ul>
-    	</div>
-    </div>
-
-    <div class="main-panel">
-        <nav class="navbar navbar-default">
+    <div class="main-panel w-100">
+		<nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle">
@@ -109,314 +47,55 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand underline" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">                    <img src="assets/img/logo.png" alt="" class="logo-img-index"> 
+                    </a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-search"></i>
-                                    <p>Search</p>
-									<b class="caret"></b>
-                              </a>
-                            
-                        </li> 
-						<li class ="dropdown-toogle">
-                            <img class="profile" src="user1.png">
-                          
-
-                        </li>
-                    </ul>
-
-                </div>
+               
             </div>
         </nav>
 
-
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row ">
-                    <h4 class="pull-left">Navigation</h4>
-                    <span class="pull-right showcode" data-target ='#headercode'>Show code</span>
-                    <div class="col-md-11 embed">
-                        <header id="header" class="fixed-top">
-                                <div class="container">
-                            
-                                  <div class="logo float-left">
-                                    <!-- Uncomment below if you prefer to use an image logo -->
-                                    <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                                    <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
-                                  </div>
-                            
-                                  <nav class="main-nav float-right d-none d-lg-block">
-                                    <ul>
-                                      <li class="active"><a href="#intro">Home</a></li>
-                                      <li><a href="#about">About Us</a></li>
-                                      <li><a href="#services">Services</a></li>
-                                      <li><a href="#portfolio">Portfolio</a></li>
-                                      <li><a href="#team">Team</a></li>
-                                      <li class="drop-down"><a href="">Drop Down</a>
-                                        <ul>
-                                          <li><a href="#">Drop Down 1</a></li>
-                                          <li class="drop-down"><a href="#drop">Drop Down 2</a>
-                                            <ul>
-                                              <li><a href="#">Deep Drop Down 1</a></li>
-                                              <li><a href="#">Deep Drop Down 2</a></li>
-                                              <li><a href="#">Deep Drop Down 3</a></li>
-                                              <li><a href="#">Deep Drop Down 4</a></li>
-                                              <li><a href="#">Deep Drop Down 5</a></li>
-                                            </ul>
-                                          </li>
-                                          <li><a href="#">Drop Down 3</a></li>
-                                          <li><a href="#">Drop Down 4</a></li>
-                                          <li><a href="#">Drop Down 5</a></li>
-                                        </ul>
-                                      </li>
-                                      <li><a href="#contact">Contact Us</a></li>
-                                    </ul>
-                                  </nav><!-- .main-nav -->
-                                  
-                                </div>
-                              </header>
-                            </div>
-                            <div class="code-dev" id='headercode'>
-                                    <ul class="nav nav-tabs">
-                                            <li class="active"><a data-toggle="tab" href="#html">HTML</a></li>
-                                            <li><a data-toggle="tab" href="#menu1">CSS</a></li>
-                                           
-                                          </ul>
-                                          
-                                          <div class="tab-content">
-                                            <div id="html" class="tab-pane fade in active">
-                                             <pre>
-                                                <code class="html" id='1'></code>
-                                           
-                                             </pre>
-                                            </div>
-                                            <div id="menu1" class="tab-pane fade">
-                                             <pre><code class="css">
-.main-nav {
-/* Drop Down */
-/* Deep Drop Down */
-}
-
-.main-nav,
-.main-nav * {
-margin: 0;
-padding: 0;
-list-style: none;
-}
-
-.main-nav > ul > li {
-position: relative;
-white-space: nowrap;
-float: left;
-}
-
-.main-nav a {
-display: block;
-position: relative;
-color: #004289;
-padding: 10px 15px;
-transition: 0.3s;
-font-size: 14px;
-font-family: "Montserrat", sans-serif;
-font-weight: 500;
-}
-
-.main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
-color: #007bff;
-text-decoration: none;
-}
-
-.main-nav .drop-down ul {
-display: block;
-position: absolute;
-left: 0;
-top: calc(100% + 30px);
-z-index: 99;
-opacity: 0;
-visibility: hidden;
-padding: 10px 0;
-background: #fff;
-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-transition: ease all 0.3s;
-}
-
-.main-nav .drop-down:hover > ul {
-opacity: 1;
-top: 100%;
-visibility: visible;
-}
-
-.main-nav .drop-down li {
-min-width: 180px;
-position: relative;
-}
-
-.main-nav .drop-down ul a {
-padding: 10px 20px;
-font-size: 13px;
-color: #004289;
-}
-
-.main-nav .drop-down ul a:hover,
-.main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
-color: #007bff;
-}
-
-.main-nav .drop-down > a:after {
-content: "\f107";
-font-family: FontAwesome;
-padding-left: 10px;
-}
-
-.main-nav .drop-down .drop-down ul {
-top: 0;
-left: calc(100% - 30px);
-}
-
-.main-nav .drop-down .drop-down:hover > ul {
-opacity: 1;
-top: 0;
-left: 100%;
-}
-
-.main-nav .drop-down .drop-down > a {
-padding-right: 35px;
-}
-
-.main-nav .drop-down .drop-down > a:after {
-content: "\f105";
-position: absolute;
-right: 15px;
-}
-</code>
-                                             </pre>
-                                            </div>
-                                          
-                                          </div>
-                            </div>
+		<div class="content">
+            <section class="v-h-100">
+            <div class="container-fluid main-banner">
+                    <h1 class="text-center">Making Development Easy</h1>
+                    <div class="btn-sec">
+                    <button class='btn btn-default custom-btn i-b'>Connect with Github</button>
+                    <h5 class="text-center i-b">Or</h5>
+                    <a href="#drag-section" class='btn btn-default custom-btn  i-b drag'>Drag and drop your project</a>
                 </div>
-                <!-- <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Users Behavior</h4>
-                                <p class="category">24 Hours performance</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartHours" class="ct-chart"></div>
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Click
-                                        <i class="fa fa-circle text-warning"></i> Click Second Time
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated 3 minutes ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Email Statistics</h4>
-                                <p class="category">Last Campaign Performance</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Bounce
-                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-timer"></i> Campaign sent 2 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card ">
-                            <div class="header">
-                                <h4 class="title">2015 Sales</h4>
-                                <p class="category">All products including Taxes</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
-
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Tesla Model S
-                                        <i class="fa fa-circle text-warning"></i> BMW 5 Series
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-check"></i> Data information certified
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
-        </div>
+            </section>
 
+            <section id="drag-section" class="v-h-100">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                    <form action="/sada"
+                    class="dropzone"
+                    id="my-awesome-dropzone">
+                    <input type="file" name="file" />
 
-        <footer class="footer">
-                <div class="container-fluid">
-                    <nav class="pull-left">
-                        <ul>
-    
-                            <li>
-                                <a href="#">
-                                    Team
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                   Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Licenses
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="copyright pull-right">
-                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Splitbit</a>
-                    </div>
-                </div>
-            </footer>
+                </form>
+                <button class='btn btn-default custom-btn upload-done'  data-toggle="modal" data-target="#myModal">Start Splitting</button>
 
+            </div>
+            </div>
+            </section>
+		</div>
     </div>
 </div>
+<!-- Trigger the modal with a button -->
 
+<!-- Modal -->
+<div class="loading-overlay">
+    <h1 style="color:#fff;margin-top:50px;text-align:center;">Please wait while your project is being parsed</h1>
+
+</div>
 
 </body>
 
     <!--   Core JS Files   -->
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
 	<script src="assets/js/bootstrap-checkbox-radio.js"></script>
@@ -427,6 +106,8 @@ right: 15px;
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
 
+    <script src="./dropzone.js"></script>
+
     <!--  Google Maps Plugin    -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -435,22 +116,15 @@ right: 15px;
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
-	<script type="text/javascript">
-    	$(document).ready(function(){
 
-        	demo.initChartist();
-
-        	$.notify({
-            	icon: 'ti-gift',
-            	message: "Your components are separated and stored securely"
-
-            },{
-                type: 'success',
-                timer: 4000
-            });
-
-    	});
-	</script>
-
+    <script>
+        $(document).ready(function(){
+            $('.upload-done').click(function(){
+                $('.loading-overlay').show();
+                setTimeout(function(){
+                    window.location = 'index1.html';
+                },2000)
+            })
+        })
+    </script>
 </html>
