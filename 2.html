@@ -5,12 +5,18 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<title>Paper Dashboard by Creative Tim</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+	<title>Splitbit - admin page </title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,40 +27,45 @@
     <!--  Paper Dashboard core CSS    -->
     <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
 
+
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
+
     <!--  Fonts and icons     -->
+    <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="wrapper">
-	<div class="sidebar" data-background-color="white" data-active-color="danger">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
 
     <!--
 		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
 		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
 	-->
 
-    <div class="sidebar-wrapper">
+    	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="index.html" class="simple-text">
-                        <img src="assets/img/logo.png" alt="" class="logo-img"> 
+                    <img src="assets/img/logo.png" alt="" class="logo-img"> 
                 </a>
             </div>
 
             <ul class="nav">
-                <li>
+                <li >
                     <a href="index.html">
                         <i class="ti-panel"></i>
                         <p>Header</p>
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="1.html">
                         <i class="ti-user"></i>
                         <p>Footer</p>
@@ -89,190 +100,283 @@
     </div>
 
     <div class="main-panel">
-            <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar bar1"></span>
-                                <span class="icon-bar bar2"></span>
-                                <span class="icon-bar bar3"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Dashboard</a>
-                        </div>
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <!-- <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <i class="ti-panel"></i>
-                                        <p>Stats</p>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="ti-bell"></i>
-                                            <p class="notification">5</p>
-                                            <p>Notifications</p>
-                                            <b class="caret"></b>
-                                      </a>
-                                      <ul class="dropdown-menu">
-                                        <li><a href="#">Notification 1</a></li>
-                                        <li><a href="#">Notification 2</a></li>
-                                        <li><a href="#">Notification 3</a></li>
-                                        <li><a href="#">Notification 4</a></li>
-                                        <li><a href="#">Another notification</a></li>
-                                      </ul>
-                                </li> -->
-                                <li>
-                                  
-        
-                                </li>
-                            </ul>
-        
-                        </div>
-                    </div>
-                </nav>
-        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-search"></i>
+                                    <p>Search</p>
+									<b class="caret"></b>
+                              </a>
+                            
+                        </li> 
+						<li class ="dropdown-toogle">
+                            <img class="profile" src="user1.png">
+                          
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
 
 
         <div class="content">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row ">
+                    <h4 class="pull-left">Navigation</h4>
+                    <span class="pull-right showcode" data-target ='#headercode'>Show code</span>
+                    <div class="col-md-11 embed">
+                        <header id="header" class="fixed-top">
+                                <div class="container">
+                            
+                                  <div class="logo float-left">
+                                    <!-- Uncomment below if you prefer to use an image logo -->
+                                    <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+                                    <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                                  </div>
+                            
+                                  <nav class="main-nav float-right d-none d-lg-block">
+                                    <ul>
+                                      <li class="active"><a href="#intro">Home</a></li>
+                                      <li><a href="#about">About Us</a></li>
+                                      <li><a href="#services">Services</a></li>
+                                      <li><a href="#portfolio">Portfolio</a></li>
+                                      <li><a href="#team">Team</a></li>
+                                      <li class="drop-down"><a href="">Drop Down</a>
+                                        <ul>
+                                          <li><a href="#">Drop Down 1</a></li>
+                                          <li class="drop-down"><a href="#">Drop Down 2</a>
+                                            <ul>
+                                              <li><a href="#">Deep Drop Down 1</a></li>
+                                              <li><a href="#">Deep Drop Down 2</a></li>
+                                              <li><a href="#">Deep Drop Down 3</a></li>
+                                              <li><a href="#">Deep Drop Down 4</a></li>
+                                              <li><a href="#">Deep Drop Down 5</a></li>
+                                            </ul>
+                                          </li>
+                                          <li><a href="#">Drop Down 3</a></li>
+                                          <li><a href="#">Drop Down 4</a></li>
+                                          <li><a href="#">Drop Down 5</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="#contact">Contact Us</a></li>
+                                    </ul>
+                                  </nav><!-- .main-nav -->
+                                  
+                                </div>
+                              </header>
+                            </div>
+                            <div class="code-dev" id='headercode'>
+                                    <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#html">HTML</a></li>
+                                            <li><a data-toggle="tab" href="#menu1">CSS</a></li>
+                                           
+                                          </ul>
+                                          
+                                          <div class="tab-content">
+                                            <div id="html" class="tab-pane fade in active">
+                                             <pre>
+                                                <code class="html"></code>
+                                             </pre>
+                                            </div>
+                                            <div id="menu1" class="tab-pane fade">
+                                             <pre><code class="css">
+.main-nav {
+/* Drop Down */
+/* Deep Drop Down */
+}
+
+.main-nav,
+.main-nav * {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.main-nav > ul > li {
+position: relative;
+white-space: nowrap;
+float: left;
+}
+
+.main-nav a {
+display: block;
+position: relative;
+color: #004289;
+padding: 10px 15px;
+transition: 0.3s;
+font-size: 14px;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+color: #007bff;
+text-decoration: none;
+}
+
+.main-nav .drop-down ul {
+display: block;
+position: absolute;
+left: 0;
+top: calc(100% + 30px);
+z-index: 99;
+opacity: 0;
+visibility: hidden;
+padding: 10px 0;
+background: #fff;
+box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+transition: ease all 0.3s;
+}
+
+.main-nav .drop-down:hover > ul {
+opacity: 1;
+top: 100%;
+visibility: visible;
+}
+
+.main-nav .drop-down li {
+min-width: 180px;
+position: relative;
+}
+
+.main-nav .drop-down ul a {
+padding: 10px 20px;
+font-size: 13px;
+color: #004289;
+}
+
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+color: #007bff;
+}
+
+.main-nav .drop-down > a:after {
+content: "\f107";
+font-family: FontAwesome;
+padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+top: 0;
+left: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+opacity: 1;
+top: 0;
+left: 100%;
+}
+
+.main-nav .drop-down .drop-down > a {
+padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+content: "\f105";
+position: absolute;
+right: 15px;
+}
+</code>
+                                             </pre>
+                                            </div>
+                                          
+                                          </div>
+                            </div>
+                </div>
+                <!-- <div class="row">
+
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Striped Table</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">Users Behavior</h4>
+                                <p class="category">24 Hours performance</p>
                             </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <th>ID</th>
-                                    	<th>Name</th>
-                                    	<th>Salary</th>
-                                    	<th>Country</th>
-                                    	<th>City</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        	<td>1</td>
-                                        	<td>Dakota Rice</td>
-                                        	<td>$36,738</td>
-                                        	<td>Niger</td>
-                                        	<td>Oud-Turnhout</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>2</td>
-                                        	<td>Minerva Hooper</td>
-                                        	<td>$23,789</td>
-                                        	<td>Curaçao</td>
-                                        	<td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>3</td>
-                                        	<td>Sage Rodriguez</td>
-                                        	<td>$56,142</td>
-                                        	<td>Netherlands</td>
-                                        	<td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>4</td>
-                                        	<td>Philip Chaney</td>
-                                        	<td>$38,735</td>
-                                        	<td>Korea, South</td>
-                                        	<td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>5</td>
-                                        	<td>Doris Greene</td>
-                                        	<td>$63,542</td>
-                                        	<td>Malawi</td>
-                                        	<td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>6</td>
-                                        	<td>Mason Porter</td>
-                                        	<td>$78,615</td>
-                                        	<td>Chile</td>
-                                        	<td>Gloucester</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
+                            <div class="content">
+                                <div id="chartHours" class="ct-chart"></div>
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Click
+                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated 3 minutes ago
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-md-12">
-                        <div class="card card-plain">
-                            <div class="header">
-                                <h4 class="title">Table on Plain Background</h4>
-                                <p class="category">Here is a subtitle for this table</p>
-                            </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <th>ID</th>
-                                    	<th>Name</th>
-                                    	<th>Salary</th>
-                                    	<th>Country</th>
-                                    	<th>City</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        	<td>1</td>
-                                        	<td>Dakota Rice</td>
-                                        	<td>$36,738</td>
-                                        	<td>Niger</td>
-                                        	<td>Oud-Turnhout</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>2</td>
-                                        	<td>Minerva Hooper</td>
-                                        	<td>$23,789</td>
-                                        	<td>Curaçao</td>
-                                        	<td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>3</td>
-                                        	<td>Sage Rodriguez</td>
-                                        	<td>$56,142</td>
-                                        	<td>Netherlands</td>
-                                        	<td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>4</td>
-                                        	<td>Philip Chaney</td>
-                                        	<td>$38,735</td>
-                                        	<td>Korea, South</td>
-                                        	<td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>5</td>
-                                        	<td>Doris Greene</td>
-                                        	<td>$63,542</td>
-                                        	<td>Malawi</td>
-                                        	<td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>6</td>
-                                        	<td>Mason Porter</td>
-                                        	<td>$78,615</td>
-                                        	<td>Chile</td>
-                                        	<td>Gloucester</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Email Statistics</h4>
+                                <p class="category">Last Campaign Performance</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Bounce
+                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-timer"></i> Campaign sent 2 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">2015 Sales</h4>
+                                <p class="category">All products including Taxes</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartActivity" class="ct-chart"></div>
+
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Tesla Model S
+                                        <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-check"></i> Data information certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
+
 
         <footer class="footer">
                 <div class="container-fluid">
@@ -302,7 +406,6 @@
                 </div>
             </footer>
 
-
     </div>
 </div>
 
@@ -330,6 +433,22 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
 
+        	demo.initChartist();
+
+        	$.notify({
+            	icon: 'ti-gift',
+            	message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+
+            },{
+                type: 'success',
+                timer: 4000
+            });
+
+    	});
+	</script>
 
 </html>

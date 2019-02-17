@@ -5,12 +5,18 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 	<title>Splitbit - admin page </title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,9 +33,12 @@
 
 
     <!--  Fonts and icons     -->
+    <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 
 </head>
 <body>
@@ -45,18 +54,18 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="index.html" class="simple-text">
-                        <img src="assets/img/logo.png" alt="" class="logo-img"> 
+                    <img src="assets/img/logo.png" alt="" class="logo-img"> 
                 </a>
             </div>
 
             <ul class="nav">
-                <li>
+                <li >
                     <a href="index.html">
                         <i class="ti-panel"></i>
                         <p>Header</p>
                     </a>
                 </li>
-                <li  class="active">
+                <li class="active">
                     <a href="1.html">
                         <i class="ti-user"></i>
                         <p>Footer</p>
@@ -104,28 +113,18 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
+
                         </li>
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
+                                    <i class="ti-search"></i>
+                                    <p>Search</p>
 									<b class="caret"></b>
                               </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li> -->
-						<li>
+                            
+                        </li> 
+						<li class ="dropdown-toogle">
+                            <img class="profile" src="user1.png">
                           
 
                         </li>
@@ -138,109 +137,225 @@
 
         <div class="content">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-warning text-center">
-                                            <i class="ti-server"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Capacity</p>
-                                            105GB
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
-                                    </div>
-                                </div>
+                <div class="row ">
+                    <h4 class="pull-left">Navigation</h4>
+                    <span class="pull-right showcode" data-target ='#headercode'>Show code</span>
+
+                            <div class="embed clear">
+                                    <footer id="footer" > 
+                                            <div class="footer-top">
+                                              <div class="container">
+                                                <div class="row">
+                                        
+                                                  <div class="col-lg-4 col-md-6 footer-info">
+                                                    <h3>NewBiz</h3>
+                                                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                                                  </div>
+                                        
+                                                  <div class="col-lg-2 col-md-6 footer-links">
+                                                    <h4>Useful Links</h4>
+                                                    <ul>
+                                                      <li><a href="#">Home</a></li>
+                                                      <li><a href="#">About us</a></li>
+                                                      <li><a href="#">Services</a></li>
+                                                      <li><a href="#">Terms of service</a></li>
+                                                      <li><a href="#">Privacy policy</a></li>
+                                                    </ul>
+                                                  </div>
+                                        
+                                                  <div class="col-lg-3 col-md-6 footer-contact">
+                                                    <h4>Contact Us</h4>
+                                                    <p>
+                                                      A108 Adam Street <br>
+                                                      New York, NY 535022<br>
+                                                      United States <br>
+                                                      <strong>Phone:</strong> +1 5589 55488 55<br>
+                                                      <strong>Email:</strong> info@example.com<br>
+                                                    </p>
+                                        
+                                                    <div class="social-links">
+                                                      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                                      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                                      <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                                      <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                                      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                        
+                                                  </div>
+                                        
+                                                  <div class="col-lg-3 col-md-6 footer-newsletter">
+                                                    <h4>Our Newsletter</h4>
+                                                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                                                    <form action="" method="post">
+                                                      <input type="email" name="email"><input type="submit"  value="Subscribe">
+                                                    </form>
+                                                  </div>
+                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                        
+                                            <div class="container">
+                                              <div class="copyright">
+                                                &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+                                              </div>
+                                              <div class="credits">
+                                                <!--
+                                                  All the links in the footer should remain intact.
+                                                  You can delete the links only if you purchased the pro version.
+                                                  Licensing information: https://bootstrapmade.com/license/
+                                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+                                                -->
+                                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                                              </div>
+                                            </div>
+                                          </footer><!-- #footer -->
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-success text-center">
-                                            <i class="ti-wallet"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Revenue</p>
-                                            $1,345
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-calendar"></i> Last day
-                                    </div>
-                                </div>
+
+
+
+                            <div class="code-dev" id='headercode'>
+                                    <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#html">HTML</a></li>
+                                            <li><a data-toggle="tab" href="#menu1">CSS</a></li>
+                                           
+                                          </ul>
+                                          
+                                          <div class="tab-content">
+                                            <div id="html" class="tab-pane fade in active">
+                                             <pre>
+                                                <code class="html"></code>
+                                             </pre>
+                                            </div>
+                                            <div id="menu1" class="tab-pane fade">
+                                             <pre><code class="css">
+.embed #footer {
+  background: #00428a;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+}
+.embed #footer .footer-top {
+  background: #004a99;
+  padding: 60px 0 30px 0;
+}
+.embed #footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+.embed #footer .footer-top .footer-info h3 {
+  font-size: 34px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.embed #footer .footer-top .footer-info p {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #ecf5ff;
+}
+.embed #footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.embed #footer .footer-top .social-links a:hover {
+  background: #0067d5;
+  color: #fff;
+}
+.embed #footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+.embed #footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+.embed #footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.embed #footer .footer-top .footer-links ul li {
+  padding: 8px 0;
+}
+.embed #footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+.embed #footer .footer-top .footer-links ul a {
+  color: #ecf5ff;
+}
+.embed #footer .footer-top .footer-links ul a:hover {
+  color: #74b5fc;
+}
+.embed #footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+.embed #footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+.embed #footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+.embed #footer .footer-top .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+.embed #footer .footer-top .footer-newsletter input[type="submit"] {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.embed #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  background: #0062cc;
+}
+.embed #footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+.embed #footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #f1f7ff;
+}
+.embed #footer .credits a {
+  color: #bfddfe;
+}
+.embed #footer .credits a:hover {
+  color: #f1f7ff;
+}
+</code>
+                                             </pre>
+                                            </div>
+                                          
+                                          </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-danger text-center">
-                                            <i class="ti-pulse"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Errors</p>
-                                            23
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-timer"></i> In the last hour
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Followers</p>
-                                            +45
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
 
                     <div class="col-md-12">
                         <div class="card">
@@ -311,38 +426,38 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
 
         <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-
-                        <li>
-                            <a href="#">
-                                Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Licenses
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Splitbit</a>
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+    
+                            <li>
+                                <a href="#">
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Licenses
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright pull-right">
+                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Splitbit</a>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
     </div>
 </div>
@@ -371,7 +486,7 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
 	<script type="text/javascript">
     	$(document).ready(function(){
 

@@ -5,12 +5,18 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 	<title>Splitbit - admin page </title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,9 +33,12 @@
 
 
     <!--  Fonts and icons     -->
+    <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 
 </head>
 <body>
@@ -45,24 +54,24 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="index.html" class="simple-text">
-                        <img src="assets/img/logo.png" alt="" class="logo-img"> 
+                    <img src="assets/img/logo.png" alt="" class="logo-img"> 
                 </a>
             </div>
 
             <ul class="nav">
-                <li>
+                <li >
                     <a href="index.html">
                         <i class="ti-panel"></i>
                         <p>Header</p>
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="1.html">
                         <i class="ti-user"></i>
                         <p>Footer</p>
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="2.html">
                         <i class="ti-view-list-alt"></i>
                         <p>Table List</p>
@@ -80,7 +89,7 @@
                         <p>Icons</p>
                     </a>
                 </li>
-                <li class="active"> 
+                <li class="active">
                     <a href="5.html">
                         <i class="ti-map"></i>
                         <p>forms</p>
@@ -104,28 +113,18 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
+
                         </li>
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
+                                    <i class="ti-search"></i>
+                                    <p>Search</p>
 									<b class="caret"></b>
                               </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li> -->
-						<li>
+                            
+                        </li> 
+						<li class ="dropdown-toogle">
+                            <img class="profile" src="user1.png">
                           
 
                         </li>
@@ -138,109 +137,111 @@
 
         <div class="content">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-warning text-center">
-                                            <i class="ti-server"></i>
-                                        </div>
+                <div class="row ">
+                    <h4 class="pull-left">Navigation</h4>
+                    <span class="pull-right showcode" data-target ='#headercode'>Show code</span>
+                    <div class="col-md-11 embed">
+                            <form action="" method="post" role="form" class="contactForm">
+                                    <div class="form-row">
+                                      <div class="form-group col-lg-6">
+                                          <div class="pull-left ">Form 1</div>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                      </div>
+                                      </form>
+                                      <div class="form-group col-lg-6">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                      </div>
                                     </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Capacity</p>
-                                            105GB
-                                        </div>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                      <div class="validation"></div>
                                     </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                      <div class="validation"></div>
                                     </div>
-                                </div>
+                                   
+                                  </form>
+                                  <input type="email" name="email">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-success text-center">
-                                            <i class="ti-wallet"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Revenue</p>
-                                            $1,345
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-calendar"></i> Last day
-                                    </div>
-                                </div>
+                            <div class="code-dev" id='headercode'>
+                                    <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#html">HTML</a></li>
+                                            <li><a data-toggle="tab" href="#menu1">CSS</a></li>
+                                           
+                                          </ul>
+                                          
+                                          <div class="tab-content">
+                                            <div id="html" class="tab-pane fade in active">
+                                             <pre>
+                                                <code class="html"></code>
+                                             </pre>
+                                            </div>
+                                            <div id="menu1" class="tab-pane fade">
+                                             <pre><code class="css">
+                                                    .embed #contact .form input, .embed #contact .form textarea {
+                                                        border-radius: 0;
+                                                        box-shadow: none;
+                                                        font-size: 14px;
+                                                    }
+                                                    .form-control {
+                                                        display: block;
+                                                        width: 100%;
+                                                        height: calc(2.25rem + 2px);
+                                                        padding: .375rem .75rem;
+                                                        font-size: 1rem;
+                                                        font-weight: 400;
+                                                        line-height: 1.5;
+                                                        color: #495057;
+                                                        background-color: #fff;
+                                                        background-clip: padding-box;
+                                                        border: 1px solid #ced4da;
+                                                        border-radius: .25rem;
+                                                        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                                                    }
+                                                    button, input {
+                                                        overflow: visible;
+                                                    }
+                                                    button, input, optgroup, select, textarea {
+                                                        margin: 0;
+                                                        font-family: inherit;
+                                                        font-size: inherit;
+                                                        line-height: inherit;
+                                                    }
+                                                    *, ::after, ::before {
+                                                        box-sizing: border-box;
+                                                    }
+                                                    element {
+                                                        visibility: visible;
+                                                    }
+                                                    .embed #footer .footer-top .footer-newsletter input[type="email"] {
+                                                        border: 0;
+                                                        padding: 6px 8px;
+                                                        width: 65%;
+                                                    }
+                                                    button, input {
+                                                        overflow: visible;
+                                                    }
+                                                    button, input, optgroup, select, textarea {
+                                                        margin: 0;
+                                                        font-family: inherit;
+                                                        font-size: inherit;
+                                                        line-height: inherit;
+                                                    }
+                                                    *, ::after, ::before {
+                                                        box-sizing: border-box;
+                                                    }
+
+</code>
+                                             </pre>
+                                            </div>
+                                          
+                                          </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-danger text-center">
-                                            <i class="ti-pulse"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Errors</p>
-                                            23
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-timer"></i> In the last hour
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Followers</p>
-                                            +45
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
 
                     <div class="col-md-12">
                         <div class="card">
@@ -311,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -371,7 +372,7 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
 	<script type="text/javascript">
     	$(document).ready(function(){
 
